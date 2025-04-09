@@ -12,7 +12,7 @@ public class TaskChooser {
         int optionChosen = 0;
         do {
 
-                System.out.println("Please choose one of the following options by typing it's number:");
+                System.out.println("Please choose one of the following options by typing its number:");
                 System.out.println("1 - Add a Task");
                 System.out.println("2 - Get a Random Task From Your List");
                 System.out.println("3 - Quit");
