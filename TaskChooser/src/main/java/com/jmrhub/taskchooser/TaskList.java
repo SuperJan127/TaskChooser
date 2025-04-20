@@ -19,18 +19,18 @@ public class TaskList {
 
             String newTask = scanner.nextLine();
             tasks.add(newTask);
-        System.out.println("You have " + tasks.size() + " task(s) on your list");
+        System.out.println("***\nYou have " + tasks.size() + " task(s) on your list\n***\n");
 
     }
     public String randomTask() {
         if (tasks.isEmpty()) {
-            return "Your list is empty, please add a task";
+            return "**-Your list is empty, please add a task-**";
         }
         Collections.shuffle(tasks);
         String taskChosen = tasks.getFirst();
         tasks.remove(0);
-        return "The task chosen for you is " + taskChosen + "."  +
-                 "\n\nYou have " + tasks.size() + " tasks remaining." ;
+        return "***\nThe task chosen for you is " + taskChosen +
+                ".\n***\n\nYou have " + tasks.size() + " tasks remaining." ;
 
     }
     public void displayTasks(){
