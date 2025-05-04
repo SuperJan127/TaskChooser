@@ -26,6 +26,7 @@ public class TaskList {
         if (tasks.isEmpty()) {
             return "**-Your list is empty, please add a task-**";
         }
+
         Collections.shuffle(tasks);
         String taskChosen = tasks.getFirst();
         tasks.remove(0);
