@@ -1,7 +1,7 @@
-package com.jmrhub.taskmanager.controller;
+package com.jmrhub.taskchooser.controller;
 
-import com.jmrhub.taskmanager.model.Task;
-import com.jmrhub.taskmanager.repository.TaskRepository;
+import com.jmrhub.taskchooser.model.Task;
+import com.jmrhub.taskchooser.repository.TaskRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

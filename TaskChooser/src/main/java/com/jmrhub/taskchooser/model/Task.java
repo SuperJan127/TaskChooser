@@ -1,4 +1,4 @@
-package com.jmrhub.taskmanager.model;
+package com.jmrhub.taskchooser.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
