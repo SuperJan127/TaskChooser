@@ -1,4 +1,4 @@
-package com.jmrhub.taskchooser;
+package com.jmrhub.taskchooser.console;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,7 +30,7 @@ public class TaskList {
         Collections.shuffle(tasks);
         String taskChosen = tasks.getFirst();
         tasks.remove(0);
-        return "***\nThe task chosen for you is " + taskChosen +
+        return "***\nThe task chosen for you is \"" + taskChosen + "\"" +
                 ".\n***\n\nYou have " + tasks.size() + " tasks remaining." ;
 
     }

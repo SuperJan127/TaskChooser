@@ -1,4 +1,4 @@
-# com.jmrhub.taskchooser.TaskChooser
+# com.jmrhub.taskchooser
 # TaskChooser Project
 
 This project combines a **Java console-based task chooser app** and a **Spring Boot REST API** into a single backend system. It demonstrates both core Java programming and backend development skills.
@@ -13,39 +13,10 @@ This project combines a **Java console-based task chooser app** and a **Spring B
 
 ---
 
-## 🧰 Technologies Used
-
-- Java 17+
-- Spring Boot
-- Spring Data JPA
-- H2 Database (file mode for persistence)
-- Jakarta Bean Validation
 
 ---
 
-## 📁 Project Structure
-
-TaskChooser/
-├── src/
-│ └── main/
-│ ├── java/
-│ │ └── com/jmrhub/taskchooser/
-│ │ ├── TaskChooser.java # Console app
-│ │ ├── TaskList.java # Console logic
-│ │ ├── TaskmanagerApplication.java # Spring Boot main class
-│ │ ├── controller/ # REST controller
-│ │ ├── model/ # Task entity
-│ │ └── repository/ # JPA repository
-│ └── resources/
-│ └── application.properties # Configs for DB + validation
-
-yaml
-Copy
-Edit
-
----
-
-## 🧪 API Endpoints
+## 🔗 API Endpoints
 
 | Method | Endpoint           | Description              |
 |--------|--------------------|--------------------------|
@@ -56,24 +27,8 @@ Edit
 
 ---
 
-## 🗃️ Database
 
-- Uses **H2 (file mode)** for persistence
-- You can access the H2 console at:
-
-http://localhost:8080/h2-console
-
-yaml
-Copy
-Edit
-
-- **JDBC URL**: `jdbc:h2:file:./data/taskdb`
-- **Username**: `sa`
-- **Password**: *(leave blank)*
-
----
-
-## 🧠 Future Plans
+## 💡 Future Plans
 
 - Add a `User` entity and assign tasks to users
 - Connect the console and API code
@@ -83,6 +38,6 @@ Edit
 
 ---
 
-## 🙌 Author
+## ✍️ Author
 
 Created by Janet Raphael as part of a Java bootcamp project to demonstrate full backend development using Spring Boot.

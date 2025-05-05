@@ -1,4 +1,4 @@
-package com.jmrhub.taskchooser;
+package com.jmrhub.taskchooser.console;
 
 import java.util.Scanner;
 
