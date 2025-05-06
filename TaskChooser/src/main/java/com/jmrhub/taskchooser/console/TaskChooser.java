@@ -10,6 +10,7 @@ public class TaskChooser {
         Scanner scanner = new Scanner(System.in);
 
         String optionChosen;
+        // main menu
         do {
                 System.out.println("\n***");
                 System.out.println("Please choose one of the following options by typing its number:");
@@ -18,10 +19,10 @@ public class TaskChooser {
                 System.out.println("3 - Display Task List");
                 System.out.println("4 - Exit");
                 System.out.println("***");
-                System.out.print("Choice: ");
+                System.out.print("Option number: ");
                 optionChosen = scanner.nextLine();
 
-
+            // switch to handle input choices
             switch (optionChosen) {
                 case "1":
                     newTaskList.addTask(scanner);

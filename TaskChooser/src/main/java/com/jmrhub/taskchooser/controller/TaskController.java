@@ -18,19 +18,20 @@ public class TaskController {
         this.taskRepository = taskRepository;
     }
 
-    // GET /api/tasks
+    // get a list of tasks
     @GetMapping
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
     }
 
-    // POST /api/tasks
+    // add a task
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public Task createTask(@Valid @RequestBody Task task) {
         return taskRepository.save(task);
     }
 
+    //update a task
     @PutMapping("{id}")
     public Task updateTask(@Valid @PathVariable Long id, @RequestBody Task updatedTask){
        Task task = taskRepository.findById(id).
@@ -42,6 +43,8 @@ public class TaskController {
        return taskRepository.save(task);
 
     }
+
+    //delete a task
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("{id}")
     public void deleteTask(@PathVariable Long id){

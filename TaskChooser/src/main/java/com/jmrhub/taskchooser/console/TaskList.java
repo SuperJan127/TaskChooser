@@ -14,6 +14,7 @@ public class TaskList {
 
     public TaskList() {}
 
+    //add task
     public void addTask(Scanner scanner){
         System.out.println("What task would you like to add?");
 
@@ -22,6 +23,8 @@ public class TaskList {
         System.out.println("***\nYou have " + tasks.size() + " task(s) on your list\n***\n");
 
     }
+
+    // retrieve random task, return message if list is empty
     public String randomTask() {
         if (tasks.isEmpty()) {
             return "**-Your list is empty, please add a task-**";
@@ -34,6 +37,8 @@ public class TaskList {
                 ".\n***\n\nYou have " + tasks.size() + " tasks remaining." ;
 
     }
+
+    //display list of tasks, if empty return empty list message
     public void displayTasks(){
         if(tasks.isEmpty()){
             System.out.println("Your task list is empty.");
